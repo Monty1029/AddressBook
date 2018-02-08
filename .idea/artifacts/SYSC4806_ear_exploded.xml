@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="SYSC4806:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SYSC4806_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SYSC4806/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
