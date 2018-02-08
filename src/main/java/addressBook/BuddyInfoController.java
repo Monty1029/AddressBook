@@ -18,6 +18,7 @@ public class BuddyInfoController {
 
     private BuddyInfoRepository buddyRepo;
     private AddressBookRepository bookRepo;
+    
 
     @Autowired
     public BuddyInfoController(BuddyInfoRepository buddyInfoRepository, AddressBookRepository addressBookRepository) {
