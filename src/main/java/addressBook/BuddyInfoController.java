@@ -26,6 +26,11 @@ public class BuddyInfoController {
         bookRepo = addressBookRepository;
     }
 
+    @RequestMapping(value="/")
+    public String index() {
+        return "buddyInfo.html";
+    }
+
     @RequestMapping(value="/books")
     public AddressBook findBook(@RequestParam(value="id") Long id) {
         return (AddressBook) bookRepo.findOne(id);
