@@ -28,7 +28,7 @@ public class BuddyInfoController {
 
     @RequestMapping(value="/")
     public String index() {
-        return "buddyInfo.html";
+        return "buddyInfo";
     }
 
     @RequestMapping(value="/books")
