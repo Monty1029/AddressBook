@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BuddyInfo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Add Buddy:</h1>
+<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    <p>Name: <input type="text" th:field="*{id}" /></p>
+    <p>Phone Number: <input type="text" th:field="*{content}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+<h1>Create Address Book</h1>
+<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    <input type="submit" value="Create" />
+</form>
+<h1>Address Book</h1>
+<p th:text="'ID: ' + ${buddy.id}" />
+<p th:text="'Name: ' + ${buddy.name}" />
+<p th:text="'Phone Number: ' + ${buddy.phoneNumber}" />
+<p>Buddy ID: </p>
+
+</body>
+</html>
